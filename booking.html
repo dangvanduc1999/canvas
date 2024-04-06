@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Contact</title>
+</head>
+<body class="!bg-[#e1e1e1] min-h-[100vh]">
+<div class="navbar bg-[#9d937e] text-black transition ease-in-out">
+    <div class="container mx-auto flex justify-between">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52">
+                    <li><a href="./home.html">Home</a></li>
+                    <li>
+                        <a href="./booking.html">Booking</a>
+                    </li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl" href="./home.html">LOGO UI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="./home.html">Home</a></li>
+                <li>
+                    <a href="./booking.html">Booking</a>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+                    </svg>
+                    <span class="badge badge-xs badge-primary indicator-item"></span>
+                </div>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="bg-[#9D937E] py-10 mt-5 container mx-auto" >
+    <div class="">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10">
+            <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:px-10 md:border-r-[3px] md:border-[#7b7569] w-3/4 h-3/4 md:w-[unset] md:h-[unset]">
+                <div class="border border-black border-[2px] rounded-[40px] overflow-hidden ">
+                    <img class="aspect-auto  md:aspect-[5/7]"
+                         src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         alt="spa">
+                </div>
+            </div>
+
+            <div class=" flex flex-col  lg:col-span-2 ">
+                <h1 class="font-[Biryani] text-center text-[60px] lg:text-[70px] mt-0 tracking-[8px] uppercase text-[#353535]">
+                    Booking</h1>
+                <p class="font-[angellaWhite] text-center text-[60px] lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
+                    by Lam lam
+                </p>
+                <div class="!text-black md:text-md lg:text-lg px-10 md:px-20  ">
+                    <form id="form-booking" class="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-6" data-parsley-validate>
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Họ và
+                                tên</label>
+                            <input type="text" id="name"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
+                                   placeholder="name@flowbite.com"
+                            />
+                            <p class="name-error hidden text-[13px]">Vui lòng nhập họ và tên!!</p>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email"
+                                   class="block mb-2 text-sm font-medium  text-gray-900  text-black">Email</label>
+                            <input type="email" id="email"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
+                            />
+                            <p class="email-error hidden text-[13px]">Email không xác thực!!</p>
+                        </div>
+                        <div>
+                            <label for="phone"
+                                   class="block mb-2 text-sm font-medium  text-gray-900  text-black">Phone
+                                number:</label>
+                            <input type="text" id="phone" name="phone" aria-describedby="helper-text-explanation"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
+                                   placeholder="123-456-7890"/>
+                            <p class="phone-error hidden text-[13px]">Số điện thoại không xác thực !!</p>
+                        </div>
+                        <div class="mt-5 sm:mt-0">
+                            <label for="date" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
+                                tháng:</label>
+                                <input datepicker name="date" type="text" id="date"
+                                       class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
+                                       placeholder="Select date"
+                                >
+                                <p class="date-error hidden text-[13px]">Vui lòng nhập ngày tháng </p>
+                        </div>
+                        <div class=" sm:col-span-2 gap-x-6 grid grid-cols-2 mt-5">
+                            <div class="flex  flex-col mb-4">
+                                <label for="c-checkbox"
+                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Classic/Nature
+                                    lash</label>
+                                <select id="c-checkbox"
+                                        class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                    <option selected>Choose a value</option>
+                                    <option value="1">full set $75</option>
+                                    <option value="2">full set 85</option>
+                                    <option value="3">fullfill 1st with 60</option>
+                                    <option value="4">fullfill 2nd with 60</option>
+                                    <option value="5">fullfill 3rd with 70</option>
+                                </select>
+                            </div>
+                            <div class="flex  flex-col mb-4">
+                                <label for="hpike" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Hybrid
+                                    slash</label>
+                                <select id="hpike"
+                                        class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                    <option selected>Choose a value</option>
+                                    <option value="1">95</option>
+                                    <option value="2">105</option>
+                                    <option value="3">65</option>
+                                    <option value="4">80</option>
+                                    <option value="5">85</option>
+                                </select>
+                            </div>
+                            <div class="col-span-2 gap-x-6 grid grid-cols-2">
+                                <div class="flex  flex-col mb-4">
+                                    <label for="v-checkbox"
+                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Volume
+                                        lash</label>
+                                    <select id="v-checkbox"
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        <option selected>Choose a value</option>
+                                        <option value="1">full set $75</option>
+                                        <option value="2">full set 85</option>
+                                        <option value="3">fullfill 1st with 60</option>
+                                        <option value="4">fullfill 2nd with 60</option>
+                                        <option value="5">fullfill 3rd with 70</option>
+                                    </select>
+                                </div>
+                                <div class="flex  flex-col mb-4">
+                                    <label for="spike"
+                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Spike
+                                        design</label>
+                                    <select id="spike"
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        <option selected>Choose a value</option>
+                                        <option value="1">95</option>
+                                        <option value="2">105</option>
+                                        <option value="3">65</option>
+                                        <option value="4">80</option>
+                                        <option value="5">85</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-span-2 gap-x-6 grid grid-cols-2">
+                                <div class="flex  flex-col mb-4">
+                                    <label for="m-checkbox"
+                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Mega
+                                        Volume</label>
+                                    <select id="m-checkbox"
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        <option selected>Choose a value</option>
+                                        <option value="1">full set $75</option>
+                                        <option value="2">full set 85</option>
+                                        <option value="3">fullfill 1st with 60</option>
+                                        <option value="4">fullfill 2nd with 60</option>
+                                        <option value="5">fullfill 3rd with 70</option>
+                                    </select>
+                                </div>
+                                <div class="flex  flex-col mb-4">
+                                    <label for="w-pike"
+                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">wispy
+                                        design</label>
+                                    <select id="w-pike"
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        <option selected>Choose a value</option>
+                                        <option value="1">95</option>
+                                        <option value="2">105</option>
+                                        <option value="3">65</option>
+                                        <option value="4">80</option>
+                                        <option value="5">85</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="last-checkbox" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded    ">
+                                <label for="last-checkbox"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Last list:
+                                    55$</label>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="removal-checkbox" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
+                                <label for="removal-checkbox"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Removal only:
+                                    35$</label>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="brow-checkbox" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
+                                <label for="last-checkbox"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow
+                                    lamination: 85$</label>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="hena" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
+                                <label for="hena"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow henna:
+                                    40$</label>
+                            </div >
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="threading" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
+                                <label for="threading"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow threading:
+                                    35$</label>
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <input id="lasting" type="checkbox" value=""
+                                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
+                                <label for="lasting"
+                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow lasting:
+                                    50$</label>
+                            </div>
+                            <div class="col-span-2 mt-5">
+
+                                <label for="message" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Your
+                                    message</label>
+                                <textarea id="message" rows="4"
+                                          class="block p-2.5 w-full text-sm text-gray-900   bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500     focus:ring-blue-500  focus:border-blue-500"
+                                          placeholder="Write your thoughts here..."></textarea>
+
+                            </div>
+                            <button type="submit"
+                                    class="col-span-2 mt-5 text-white bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center  bg-blue-600  hover:bg-blue-700  focus:ring-blue-800">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h3 class="uppercase font-[Biryani] text-[#9d937e] treading-[5px] text-center py-10">
+        Lamlamlashes
+    </h3>
+</footer>
+<div id="small-modal"
+     class="hidden overflow-y-auto overflow-x-hidden fixed  top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full "
+>
+
+    <div class="  w-full max-w-md max-h-full flex items-center justify-center ">
+        <!-- Modal content -->
+        <div role="status">
+            <svg aria-hidden="true" class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                 viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                      fill="currentColor"/>
+                <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                      fill="currentFill"/>
+            </svg>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<!-- Include Parsley.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script ype="text/javascript">
+    window.onload = () => {
+        const navbar = document.querySelector('.navbar')
+        window.onscroll = (e) => {
+            console.log(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                navbar.classList.add("sticky")
+                navbar.classList.add("top-0")
+                navbar.classList.add('text-white')
+                navbar.classList.add('bg-[#1d232a]')
+                navbar.classList.remove("bg-[#9d937e]");
+                navbar.classList.remove("text-black")
+            } else {
+                navbar.classList.remove("sticky");
+                navbar.classList.remove("top-0");
+                navbar.classList.remove('bg-[#1d232a]')
+                navbar.classList.remove('text-white')
+                navbar.classList.add("bg-[#9d937e]");
+                navbar.classList.add("text-black");
+            }
+        }
+
+
+        const form = document.getElementById('form-booking');
+        const usernameInput = document.getElementById('name');
+        const usernameError = document.querySelector('.name-error');
+
+        const emailInput = document.getElementById('email');
+        const emailError = document.querySelector('.email-error');
+
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.querySelector('.phone-error');
+
+        const dateInput = document.getElementById('date');
+        const dateError = document.querySelector('.date-error');
+
+        const $targetEl = document.getElementById('small-modal');
+
+        const handleValidate = () => {
+            let isValid = false
+            if (validator.isEmpty(usernameInput.value.trim())) {
+                usernameInput.classList.add('border-red-500');
+                usernameError.classList.remove('hidden')
+                usernameError.classList.add('block')
+                usernameError.classList.add('text-red-500')
+                isValid = false
+            } else {
+                usernameInput.classList.remove('border-red-500');
+                usernameError.classList.remove('block')
+                usernameError.classList.remove('text-red-500')
+                usernameError.classList.add('hidden')
+                isValid = true
+            }
+
+            if (!validator.isEmail(emailInput.value.trim())) {
+                emailInput.classList.add('border-red-500');
+                emailError.classList.remove('hidden')
+                emailError.classList.add('block')
+                emailError.classList.add('text-red-500')
+                isValid = false
+
+            } else {
+                emailInput.classList.remove('border-red-500');
+                emailError.classList.remove('block')
+                emailError.classList.remove('text-red-500')
+                emailError.classList.add('hidden')
+                isValid = true
+            }
+
+            if (validator.isEmpty(dateInput.value.trim())) {
+                dateInput.classList.add('border-red-500');
+                dateError.classList.remove('hidden')
+                dateError.classList.add('block')
+                dateError.classList.add('text-red-500')
+
+                isValid = false
+            } else {
+                dateInput.classList.remove('border-red-500');
+                dateError.classList.remove('block')
+                dateError.classList.remove('text-red-500')
+                dateError.classList.add('hidden')
+                isValid = true
+            }
+
+            if (!validator.isMobilePhone(phoneInput.value.trim(), 'any')) {
+                phoneInput.classList.add('border-red-500');
+                phoneError.classList.remove('hidden')
+                phoneError.classList.add('block')
+                phoneError.classList.add('text-red-500')
+                isValid = false
+            } else {
+                phoneInput.classList.remove('border-red-500');
+                phoneError.classList.remove('block')
+                phoneError.classList.remove('text-red-500')
+                phoneError.classList.add('hidden')
+                isValid = true
+            }
+            return isValid
+        }
+
+        const options = {
+            closable: true,
+            backdrop: 'dynamic',
+            backdropClasses: 'bg-black/[.45] dark:bg-black/[.45] fixed inset-0 z-40',
+            onHide: () => {
+                Toastify({
+                    text: "Booking success",
+                    className: "success",
+                    close: true,
+                    style: {
+                        background: "linear-gradient(to right, #00b09b, #96c93d)",
+                    }
+                }).showToast();
+            },
+            onShow: () => {
+                console.log('modal is shown');
+            },
+            onToggle: () => {
+                console.log('modal has been toggled');
+            },
+        };
+
+// instance options object
+        const instanceOptions = {
+            id: 'small-modal',
+        };
+
+        const modal = new Modal($targetEl, options, instanceOptions);
+
+
+// options object
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+            // Validate username
+            const isValid = handleValidate()
+            if (isValid) {
+
+                console.log('call api')
+                modal.show();
+                setTimeout(() => {
+                    modal.hide();
+                } ,2000)
+            }
+
+        });
+
+
+
+// optional trigger element
+
+    }
+
+</script>
+</body>
+
+</html>
