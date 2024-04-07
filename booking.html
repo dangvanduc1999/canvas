@@ -11,12 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
+          rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Contact</title>
 </head>
 <body class="!bg-[#e1e1e1] min-h-[100vh]">
-<div class="navbar bg-[#9d937e] text-black transition ease-in-out">
+<div class="navbar bg-[#9d937e] text-black transition ease-in-out !py-3">
     <div class="container mx-auto flex justify-between">
         <div class="navbar-start">
             <div class="dropdown">
@@ -29,64 +31,40 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52">
-                    <li><a href="./home.html">Home</a></li>
-                    <li>
-                        <a href="./booking.html">Booking</a>
-                    </li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./home.html" class="font-[Satisfy]">Home</a></li>
+                    <li><a href="./contact.html" class="font-[Satisfy]">Contact</a></li>
                 </ul>
             </div>
             <a class="btn btn-ghost text-xl" href="./home.html">LOGO UI</a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./home.html">Home</a></li>
-                <li>
-                    <a href="./booking.html">Booking</a>
-                </li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./home.html" class="font-[Satisfy]">Home</a></li>
+                <li><a href="./contact.html" class="font-[Satisfy]">Contact</a></li>
             </ul>
-        </div>
-        <div class="">
-            <button class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                </svg>
-            </button>
-            <button class="btn btn-ghost btn-circle">
-                <div class="indicator">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-                    </svg>
-                    <span class="badge badge-xs badge-primary indicator-item"></span>
-                </div>
-            </button>
         </div>
     </div>
 </div>
-<div class="bg-[#9D937E] py-10 mt-5 container mx-auto" >
+<div class="bg-[#9D937E] py-10 mt-5 container mx-auto">
     <div class="">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10">
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-x-10">
             <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:px-10 md:border-r-[3px] md:border-[#7b7569] w-3/4 h-3/4 md:w-[unset] md:h-[unset]">
                 <div class="border border-black border-[2px] rounded-[40px] overflow-hidden ">
-                    <img class="aspect-auto  md:aspect-[5/7]"
+                    <img class="aspect-auto sm:aspect-[9/10]  lg:aspect-[5/7]"
                          src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                          alt="spa">
                 </div>
             </div>
 
             <div class=" flex flex-col  lg:col-span-2 ">
-                <h1 class="font-[Biryani] text-center text-[60px] lg:text-[70px] mt-0 tracking-[8px] uppercase text-[#353535]">
+                <h1 class="text-center text-[60px] lg:text-[70px] mt-0 tracking-[8px] uppercase text-[#353535]">
                     Booking</h1>
                 <p class="font-[angellaWhite] text-center text-[60px] lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
                     by Lam lam
                 </p>
                 <div class="!text-black md:text-md lg:text-lg px-10 md:px-20  ">
-                    <form id="form-booking" class="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-6" data-parsley-validate>
+                    <form id="form-booking" class="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-6"
+                          data-parsley-validate>
                         <div class="mb-5">
                             <label for="name" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Họ và
                                 tên</label>
@@ -113,14 +91,37 @@
                                    placeholder="123-456-7890"/>
                             <p class="phone-error hidden text-[13px]">Số điện thoại không xác thực !!</p>
                         </div>
-                        <div class="mt-5 sm:mt-0">
-                            <label for="date" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
-                                tháng:</label>
+                        <div class="mt-5 sm:mt-0 grid grid-cols-2 gap-x-5">
+                            <div>
+                                <label for="date" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
+                                    tháng:</label>
                                 <input datepicker name="date" type="text" id="date"
                                        class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
                                        placeholder="Select date"
+                                       datepicker-format="yyyy/mm/dd"
                                 >
                                 <p class="date-error hidden text-[13px]">Vui lòng nhập ngày tháng </p>
+                            </div>
+                            <div>
+                                <label for="time"
+                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Giờ:</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500  text-gray-400" aria-hidden="true"
+                                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path fill-rule="evenodd"
+                                                  d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4a1 1 0 1 0-2 0v4a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414L13 11.586V8Z"
+                                                  clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <input type="time" id="time"
+                                           class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                            value="00:00" required/>
+
+                                </div>
+                                <p class="date-error hidden text-[13px]">Vui lòng nhập Giờ </p>
+                            </div>
+
                         </div>
                         <div class=" sm:col-span-2 gap-x-6 grid grid-cols-2 mt-5">
                             <div class="flex  flex-col mb-4">
@@ -237,7 +238,7 @@
                                 <label for="hena"
                                        class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow henna:
                                     40$</label>
-                            </div >
+                            </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="threading" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
@@ -251,6 +252,51 @@
                                 <label for="lasting"
                                        class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow lasting:
                                     50$</label>
+                            </div>
+                            <div class="mt-5">
+                                <label for="card"
+                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Card Visa:</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                        <svg class="w-6 h-6 text-[#8c8c8c] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z"/>
+                                        </svg>
+                                    </div>
+                                    <input type="text" id="card" name="phone" aria-describedby="helper-text-explanation"
+                                           class=" ps-10  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
+                                           placeholder="123-456-7890"/>
+                                </div>
+
+                                <p class="card-error hidden text-[13px]">Card không xác thực !!</p>
+                            </div>
+                            <div class="mt-5 sm:mt-0 grid grid-cols-2 gap-x-5">
+                                <div class="mt-5">
+                                    <label for="date-card" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
+                                        tháng:</label>
+                                    <input datepicker name="date" type="text" id="date-card"
+                                           class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
+                                           placeholder="Select date"
+                                           datepicker-format="mm/dd"
+                                    >
+                                    <p class="date-card-error hidden text-[13px]">Vui lòng nhập ngày tháng hết hạn </p>
+                                </div>
+                                <div class="mt-5">
+                                    <label for="cvc"
+                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">CVC:</label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                            <svg class="w-6 h-6 text-[#8c8c8c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <input type="text" id="cvc"
+                                               class="ps-10 bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                                required placeholder="cvc"/>
+
+                                    </div>
+                                    <p class="date-error hidden text-[13px]">Vui lòng nhập CVC </p>
+                                </div>
+
                             </div>
                             <div class="col-span-2 mt-5">
 
@@ -275,12 +321,12 @@
     </div>
 </div>
 <footer>
-    <h3 class="uppercase font-[Biryani] text-[#9d937e] treading-[5px] text-center py-10">
+    <h3 class="uppercase font-[Biryani] text-[#9d937e] treading-[5px] text-center py-5 font-[Satisfy]">
         Lamlamlashes
     </h3>
 </footer>
 <div id="small-modal"
-     class="hidden overflow-y-auto overflow-x-hidden fixed  top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full "
+     class="hidden bg-[rgba(140,140,140,0.45)]  overflow-y-auto overflow-x-hidden fixed  top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full "
 >
 
     <div class="  w-full max-w-md max-h-full flex items-center justify-center ">
@@ -297,6 +343,50 @@
         </div>
     </div>
 </div>
+<div id="popup-modal"
+     class=" hidden !bg-[rgba(140,140,140,0.45)]  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow  bg-gray-700">
+            <button type="button"
+                    class="absolute btn-close-popupModal top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  hover:bg-gray-600  hover:text-white"
+                   >
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                     viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-4 md:p-5 text-center">
+                <div class="flex items-center justify-center">
+                    <svg style="color: green" class="w-[80px] h-[80px] text-green text-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                </div>
+                <h3 class="my-5 text-[30px] font-normal text-gray-500  text-gray-400">Booking Success</h3>
+                <div class="w-full px-12 pt-3 grid grid-col-1">
+                    <div class="mb-3">
+                        <span>Họ và tên:</span>
+                        <span> Đặng Văn Đức </span>
+                    </div>
+                    <div class="mb-3">
+                        <span>Số điện thoại:</span>
+                        <span>123456789</span>
+                    </div>
+                    <div class="mb-3">
+                        <span>Ngày:</span>
+                        <span>2024/20/11</span>
+                    </div>
+                    <div class="mb-3">
+                        <span>Giờ:</span>
+                        <span>12:00</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
@@ -308,7 +398,6 @@
     window.onload = () => {
         const navbar = document.querySelector('.navbar')
         window.onscroll = (e) => {
-            console.log(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 navbar.classList.add("sticky")
                 navbar.classList.add("top-0")
@@ -340,8 +429,18 @@
         const dateInput = document.getElementById('date');
         const dateError = document.querySelector('.date-error');
 
-        const $targetEl = document.getElementById('small-modal');
+        const cardInput = document.getElementById('card');
+        const cardError = document.querySelector('.card-error');
 
+        const dateCardInput = document.getElementById('date-card');
+        const dateCardError = document.querySelector('.date-card-error');
+
+        const cvcInput = document.getElementById('cvc');
+        const cvcError = document.querySelector('.cvc-error');
+
+        const $targetEl = document.getElementById('small-modal');
+        const $popupTarget = document.getElementById('popup-modal')
+        const btnClosePopup = document.querySelector('.btn-close-popupModal')
         const handleValidate = () => {
             let isValid = false
             if (validator.isEmpty(usernameInput.value.trim())) {
@@ -401,41 +500,66 @@
                 phoneError.classList.add('hidden')
                 isValid = true
             }
+
+            if (validator.isEmpty(cardInput.value.trim())) {
+                cardInput.classList.add('border-red-500');
+                cardError.classList.remove('hidden')
+                cardError.classList.add('block')
+                cardError.classList.add('text-red-500')
+                isValid = false
+            } else {
+                cardInput.classList.remove('border-red-500');
+                cardError.classList.remove('block')
+                cardError.classList.remove('text-red-500')
+                cardError.classList.add('hidden')
+                isValid = true
+            }
+
+            if (validator.isEmpty(dateCardInput.value.trim())) {
+                dateCardInput.classList.add('border-red-500');
+                dateCardError.classList.remove('hidden')
+                dateCardError.classList.add('block')
+                dateCardError.classList.add('text-red-500')
+                isValid = false
+            } else {
+                dateCardInput.classList.remove('border-red-500');
+                dateCardError.classList.remove('block')
+                dateCardError.classList.remove('text-red-500')
+                dateCardError.classList.add('hidden')
+                isValid = true
+            }
+
+            if (validator.isEmpty(cvcInput.value.trim())) {
+                cvcInput.classList.add('border-red-500');
+                cvcError.classList.remove('hidden')
+                cvcError.classList.add('block')
+                cvcError.classList.add('text-red-500')
+                isValid = false
+            } else {
+                cvcInput.classList.remove('border-red-500');
+                cvcError.classList.remove('block')
+                cvcError.classList.remove('text-red-500')
+                cvcError.classList.add('hidden')
+                isValid = true
+            }
+
+
             return isValid
         }
 
         const options = {
-            closable: true,
-            backdrop: 'dynamic',
-            backdropClasses: 'bg-black/[.45] dark:bg-black/[.45] fixed inset-0 z-40',
-            onHide: () => {
-                Toastify({
-                    text: "Booking success",
-                    className: "success",
-                    close: true,
-                    style: {
-                        background: "linear-gradient(to right, #00b09b, #96c93d)",
-                    }
-                }).showToast();
-            },
-            onShow: () => {
-                console.log('modal is shown');
-            },
-            onToggle: () => {
-                console.log('modal has been toggled');
-            },
+            backdropClasses: 'bg-gray-50/20 fixed inset-0 z-40',
         };
+
 
 // instance options object
-        const instanceOptions = {
-            id: 'small-modal',
-        };
 
-        const modal = new Modal($targetEl, options, instanceOptions);
+
+        const modal = new Modal($targetEl,options);
+        const popup = new Modal($popupTarget)
 
 
 // options object
-
         form.addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent default form submission
             // Validate username
@@ -445,12 +569,16 @@
                 console.log('call api')
                 modal.show();
                 setTimeout(() => {
-                    modal.hide();
-                } ,2000)
+                    modal.hide()
+                    popup.show()
+                }, 2000)
             }
 
         });
-
+        btnClosePopup.addEventListener('click' ,function()  {
+            console.log("hello")
+            popup.hide()
+        })
 
 
 // optional trigger element
