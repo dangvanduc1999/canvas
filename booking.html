@@ -30,17 +30,20 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52">
-                    <li><a href="./home.html" class="font-[Satisfy]">Home</a></li>
-                    <li><a href="./contact.html" class="font-[Satisfy]">Contact</a></li>
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52 !bg-white text-black">
+                    <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a>
+                    </li>
+                    <li><a href="./contact.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-xl" href="./home.html">LOGO UI</a>
+            <a class="btn btn-ghost text-[20px] md:text-[22px] lg:text-[32px]" href="./home.html">LOGO UI</a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./home.html" class="font-[Satisfy]">Home</a></li>
-                <li><a href="./contact.html" class="font-[Satisfy]">Contact</a></li>
+                <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a></li>
+                <li><a href="./contact.html"
+                       class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -51,7 +54,7 @@
             <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:px-10 md:border-r-[3px] md:border-[#7b7569] w-3/4 h-3/4 md:w-[unset] md:h-[unset]">
                 <div class="border border-black border-[2px] rounded-[40px] overflow-hidden ">
                     <img class="aspect-auto sm:aspect-[9/10]  lg:aspect-[5/7]"
-                         src="https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         src="https://images.unsplash.com/photo-1621468644467-37e6df96e446?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                          alt="spa">
                 </div>
             </div>
@@ -66,37 +69,40 @@
                     <form id="form-booking" class="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-6"
                           data-parsley-validate>
                         <div class="mb-5">
-                            <label for="name" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Họ và
+                            <label for="name"
+                                   class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Họ
+                                và
                                 tên</label>
                             <input type="text" id="name"
-                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
                                    placeholder="name@flowbite.com"
                             />
                             <p class="name-error hidden text-[13px]">Vui lòng nhập họ và tên!!</p>
                         </div>
                         <div class="mb-5">
                             <label for="email"
-                                   class="block mb-2 text-sm font-medium  text-gray-900  text-black">Email</label>
+                                   class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Email</label>
                             <input type="email" id="email"
-                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500"
                             />
                             <p class="email-error hidden text-[13px]">Email không xác thực!!</p>
                         </div>
                         <div>
                             <label for="phone"
-                                   class="block mb-2 text-sm font-medium  text-gray-900  text-black">Phone
+                                   class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Phone
                                 number:</label>
                             <input type="text" id="phone" name="phone" aria-describedby="helper-text-explanation"
-                                   class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
+                                   class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
                                    placeholder="123-456-7890"/>
                             <p class="phone-error hidden text-[13px]">Số điện thoại không xác thực !!</p>
                         </div>
                         <div class="mt-5 sm:mt-0 grid grid-cols-2 gap-x-5">
                             <div>
-                                <label for="date" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
+                                <label for="date"
+                                       class="block mb-2  text-[16px] md:text-[18px] lg:text-[22px] font-medium  text-gray-900  text-black">Ngày
                                     tháng:</label>
                                 <input datepicker name="date" type="text" id="date"
-                                       class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
+                                       class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
                                        placeholder="Select date"
                                        datepicker-format="yyyy/mm/dd"
                                 >
@@ -104,7 +110,7 @@
                             </div>
                             <div>
                                 <label for="time"
-                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Giờ:</label>
+                                       class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Giờ:</label>
                                 <div class="relative">
                                     <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
                                         <svg class="w-4 h-4 text-gray-500  text-gray-400" aria-hidden="true"
@@ -115,8 +121,8 @@
                                         </svg>
                                     </div>
                                     <input type="time" id="time"
-                                           class="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                                            value="00:00" required/>
+                                           class="bg-gray-50 border leading-none border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                           value="00:00" required/>
 
                                 </div>
                                 <p class="date-error hidden text-[13px]">Vui lòng nhập Giờ </p>
@@ -126,10 +132,10 @@
                         <div class=" sm:col-span-2 gap-x-6 grid grid-cols-2 mt-5">
                             <div class="flex  flex-col mb-4">
                                 <label for="c-checkbox"
-                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Classic/Nature
+                                       class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Classic/Nature
                                     lash</label>
                                 <select id="c-checkbox"
-                                        class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                     <option selected>Choose a value</option>
                                     <option value="1">full set $75</option>
                                     <option value="2">full set 85</option>
@@ -139,10 +145,11 @@
                                 </select>
                             </div>
                             <div class="flex  flex-col mb-4">
-                                <label for="hpike" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Hybrid
+                                <label for="hpike"
+                                       class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Hybrid
                                     slash</label>
                                 <select id="hpike"
-                                        class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                        class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                     <option selected>Choose a value</option>
                                     <option value="1">95</option>
                                     <option value="2">105</option>
@@ -154,10 +161,10 @@
                             <div class="col-span-2 gap-x-6 grid grid-cols-2">
                                 <div class="flex  flex-col mb-4">
                                     <label for="v-checkbox"
-                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Volume
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Volume
                                         lash</label>
                                     <select id="v-checkbox"
-                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                         <option selected>Choose a value</option>
                                         <option value="1">full set $75</option>
                                         <option value="2">full set 85</option>
@@ -168,10 +175,10 @@
                                 </div>
                                 <div class="flex  flex-col mb-4">
                                     <label for="spike"
-                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Spike
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Spike
                                         design</label>
                                     <select id="spike"
-                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                         <option selected>Choose a value</option>
                                         <option value="1">95</option>
                                         <option value="2">105</option>
@@ -184,10 +191,10 @@
                             <div class="col-span-2 gap-x-6 grid grid-cols-2">
                                 <div class="flex  flex-col mb-4">
                                     <label for="m-checkbox"
-                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">Mega
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Mega
                                         Volume</label>
                                     <select id="m-checkbox"
-                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                         <option selected>Choose a value</option>
                                         <option value="1">full set $75</option>
                                         <option value="2">full set 85</option>
@@ -198,10 +205,10 @@
                                 </div>
                                 <div class="flex  flex-col mb-4">
                                     <label for="w-pike"
-                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">wispy
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">wispy
                                         design</label>
                                     <select id="w-pike"
-                                            class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
+                                            class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5     focus:ring-blue-500  focus:border-blue-500">
                                         <option selected>Choose a value</option>
                                         <option value="1">95</option>
                                         <option value="2">105</option>
@@ -215,55 +222,65 @@
                                 <input id="last-checkbox" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded    ">
                                 <label for="last-checkbox"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Last list:
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Last
+                                    list:
                                     55$</label>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="removal-checkbox" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
                                 <label for="removal-checkbox"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Removal only:
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Removal
+                                    only:
                                     35$</label>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="brow-checkbox" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
                                 <label for="last-checkbox"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Brow
                                     lamination: 85$</label>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="hena" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
                                 <label for="hena"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow henna:
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Brow
+                                    henna:
                                     40$</label>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="threading" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
                                 <label for="threading"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow threading:
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Brow
+                                    threading:
                                     35$</label>
                             </div>
                             <div class="col-span-2 sm:col-span-1">
                                 <input id="lasting" type="checkbox" value=""
                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  focus:ring-blue-600  ring-offset-gray-800 focus:ring-2   ">
                                 <label for="lasting"
-                                       class="ms-2 text-sm font-medium text-gray-900  text-gray-300">Brow lasting:
+                                       class="ms-2   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium text-gray-900  text-gray-300">Brow
+                                    lasting:
                                     50$</label>
                             </div>
                             <div class="mt-5">
                                 <label for="card"
-                                       class="block mb-2 text-sm font-medium  text-gray-900  text-black">Card Visa:</label>
+                                       class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Card
+                                    Visa:</label>
                                 <div class="relative">
                                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                        <svg class="w-6 h-6 text-[#8c8c8c] " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z"/>
+                                        <svg class="w-6 h-6 text-[#8c8c8c] " aria-hidden="true"
+                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                             viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                  stroke-width="2"
+                                                  d="M3 10h18M6 14h2m3 0h5M3 7v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1Z"/>
                                         </svg>
                                     </div>
                                     <input type="text" id="card" name="phone" aria-describedby="helper-text-explanation"
-                                           class=" ps-10  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
+                                           class=" ps-10  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5      focus:ring-blue-500  focus:border-blue-500"
                                            placeholder="123-456-7890"/>
                                 </div>
 
@@ -271,10 +288,11 @@
                             </div>
                             <div class="mt-5 sm:mt-0 grid grid-cols-2 gap-x-5">
                                 <div class="mt-5">
-                                    <label for="date-card" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Ngày
+                                    <label for="date-card"
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Ngày
                                         tháng:</label>
                                     <input datepicker name="date" type="text" id="date-card"
-                                           class="  bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
+                                           class="  bg-gray-100 border border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full s p-2.5   focus:ring-blue-500  focus:border-blue-500"
                                            placeholder="Select date"
                                            datepicker-format="mm/dd"
                                     >
@@ -282,16 +300,20 @@
                                 </div>
                                 <div class="mt-5">
                                     <label for="cvc"
-                                           class="block mb-2 text-sm font-medium  text-gray-900  text-black">CVC:</label>
+                                           class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">CVC:</label>
                                     <div class="relative">
                                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                                            <svg class="w-6 h-6 text-[#8c8c8c]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                                <path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z" clip-rule="evenodd"/>
+                                            <svg class="w-6 h-6 text-[#8c8c8c]" aria-hidden="true"
+                                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 fill="currentColor" viewBox="0 0 24 24">
+                                                <path fill-rule="evenodd"
+                                                      d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z"
+                                                      clip-rule="evenodd"/>
                                             </svg>
                                         </div>
                                         <input type="text" id="cvc"
-                                               class="ps-10 bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-                                                required placeholder="cvc"/>
+                                               class="ps-10 bg-gray-50 border leading-none border-gray-300 text-gray-900   mb-2 text-[16px] md:text-[18px] lg:text-[19px] rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                                               required placeholder="cvc"/>
 
                                     </div>
                                     <p class="date-error hidden text-[13px]">Vui lòng nhập CVC </p>
@@ -300,15 +322,16 @@
                             </div>
                             <div class="col-span-2 mt-5">
 
-                                <label for="message" class="block mb-2 text-sm font-medium  text-gray-900  text-black">Your
+                                <label for="message"
+                                       class="block   mb-2 text-[16px] md:text-[18px] lg:text-[19px] font-medium  text-gray-900  text-black">Your
                                     message</label>
                                 <textarea id="message" rows="4"
-                                          class="block p-2.5 w-full text-sm text-gray-900   bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500     focus:ring-blue-500  focus:border-blue-500"
+                                          class="block p-2.5 w-full   mb-2 text-[16px] md:text-[18px] lg:text-[19px] text-gray-900   bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500     focus:ring-blue-500  focus:border-blue-500"
                                           placeholder="Write your thoughts here..."></textarea>
 
                             </div>
                             <button type="submit"
-                                    class="col-span-2 mt-5 text-white bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center  bg-blue-600  hover:bg-blue-700  focus:ring-blue-800">
+                                    class="col-span-2 mt-5 text-white bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-lg   mb-2 text-[16px] md:text-[18px] lg:text-[19px] w-full sm:w-auto px-5 py-2.5 text-center  bg-blue-600  hover:bg-blue-700  focus:ring-blue-800">
                                 Submit
                             </button>
                         </div>
@@ -348,8 +371,8 @@
     <div class="relative p-4 w-full max-w-md max-h-full">
         <div class="relative bg-white rounded-lg shadow  bg-gray-700">
             <button type="button"
-                    class="absolute btn-close-popupModal top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center  hover:bg-gray-600  hover:text-white"
-                   >
+                    class="absolute btn-close-popupModal top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg   mb-2 text-[16px] md:text-[18px] lg:text-[19px] w-8 h-8 ms-auto inline-flex justify-center items-center  hover:bg-gray-600  hover:text-white"
+            >
                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                      viewBox="0 0 14 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -359,8 +382,10 @@
             </button>
             <div class="p-4 md:p-5 text-center">
                 <div class="flex items-center justify-center">
-                    <svg style="color: green" class="w-[80px] h-[80px] text-green text-center" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    <svg style="color: green" class="w-[80px] h-[80px] text-green text-center" aria-hidden="true"
+                         xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                     </svg>
                 </div>
                 <h3 class="my-5 text-[30px] font-normal text-gray-500  text-gray-400">Booking Success</h3>
@@ -394,6 +419,9 @@
 <!-- Include Parsley.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.6.0/validator.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script src="https://unpkg.com/flowbite-datepicker@1.2.2/dist/js/datepicker-full.js"></script>
+
 <script ype="text/javascript">
     window.onload = () => {
         const navbar = document.querySelector('.navbar')
@@ -441,6 +469,10 @@
         const $targetEl = document.getElementById('small-modal');
         const $popupTarget = document.getElementById('popup-modal')
         const btnClosePopup = document.querySelector('.btn-close-popupModal')
+
+        new Datepicker(dateInput, {
+            todayHighlight: true,
+        });
         const handleValidate = () => {
             let isValid = false
             if (validator.isEmpty(usernameInput.value.trim())) {
@@ -555,7 +587,7 @@
 // instance options object
 
 
-        const modal = new Modal($targetEl,options);
+        const modal = new Modal($targetEl, options);
         const popup = new Modal($popupTarget)
 
 
@@ -575,7 +607,7 @@
             }
 
         });
-        btnClosePopup.addEventListener('click' ,function()  {
+        btnClosePopup.addEventListener('click', function () {
             console.log("hello")
             popup.hide()
         })
