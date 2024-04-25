@@ -15,13 +15,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
           rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Home</title>
 </head>
 <body class="!bg-[#e1e1e1] min-h-[100vh]">
 <div class="navbar bg-[#9d937e] text-black transition ease-in-out !py-3">
     <div class="container mx-auto flex justify-between">
-        <div class="navbar-start">
+        <div class="navbar-start w-full flex">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -32,84 +33,88 @@
                 </div>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52 bg-white text-black">
-                    <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a></li>
-                    <li><a href="./contact.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a></li>
+                    <li><a href="./home.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Home</a></li>
+                    <li><a href="./contact.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Contact</a></li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-[20px] md:text-[22px] lg:text-[32px]" href="./home.html">LOGO UI</a>
+            <div class="inline-block w-full text-center lg:text-left">
+                <a class="inline-block translate-y-[2px] w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[80px] lg:h-[80px]" href="./home.html">
+                    <img class="w-full h-full object-cover" src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a></li>
-                <li><a href="./contact.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a></li>
+                <li><a href="./home.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Home</a></li>
+                <li><a href="./contact.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Contact</a></li>
             </ul>
         </div>
     </div>
 </div>
-<div class="w-full h-[300px] bg-gradient-to-b from-[#9d937e] to-[#4b4737] flex flex-col items-center justify-center text-white ">
-    <h2 class="font-[angellaWhite] text-[80px]  md:text-[100px] lg:text-[150px] ">
+<div class="w-full md:h-[300px] bg-gradient-to-b from-[#9d937e] to-[#4b4737] flex flex-col items-center justify-center text-white ">
+    <h2 class="font-[angellaWhite] text-[40px] sm:text-[80px]  md:text-[100px] lg:text-[150px] ">
         Lam Lam lashes
     </h2>
-    <h3 class="  text-[38px] tracking-[8px] uppercase">
+    <h3 class=" text-[20px]  sm:text-[38px] tracking-[8px] uppercase">
         Home beauty
     </h3>
 </div>
 <div class="w-full py-3">
     <div class="container mx-auto flex items-center justify-end">
-        <div class="w-12 h-12 cursor-pointer mr-8">
+        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  cursor-pointer mr-8">
             <img src="./assets/images/insta.png" class="w-full h-full object-cover" alt="phone icon">
         </div>
-        <div class="w-12 h-12 cursor-pointer mr-8">
+        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  cursor-pointer mr-8">
             <img src="./assets/svg/phone.svg" alt="phone icon">
         </div>
-        <div class="w-12 h-12 cursor-pointer">
+        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  cursor-pointer">
             <img src="./assets/svg/message.svg" alt="phone icon">
         </div>
     </div>
 </div>
-<div class="bg-[#9D937E] py-10 mt-2 mx-14 ">
+<div class="bg-[#9D937E] py-10 mt-2 mx-2 sm:mx-3 md:mx-4 lg:mx-14 ">
     <div class=" container mx-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10">
-            <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:px-10 md:border-r-[3px] md:border-[#7b7569] w-3/4 h-3/4 md:w-[unset] md:h-[unset]">
-                <div class="border border-black border-[2px] rounded-[40px] overflow-hidden ">
-                    <img class="aspect-auto  md:aspect-[5/7]"
+        <div class="grid grid-cols-3 pl-2 sm:pl-0 md:grid-cols-2 lg:grid-cols-3 gap-x-0 md:gap-x-10">
+            <div class="col-span-1 py-5 sm:py-8 md:py-10 mx-auto md:mx-[unset] md:px-0 md:px-10 md:border-r-[3px] md:border-[#7b7569] w-full h-full sm:w-3/4 sm:h-3/4 md:w-[unset] md:h-[unset]">
+                <div class="border border-black border-[2px] rounded-[20px] sm:rounded-[40px] overflow-hidden ">
+                    <img class="aspect-[9/16]  md:aspect-[5/]"
                          src="https://images.unsplash.com/photo-1621468644467-37e6df96e446?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                          alt="spa">
                 </div>
             </div>
 
-            <div class=" flex flex-col items-center lg:col-span-2 lg:pr-20 ">
-                <h1 class="font-[Biryani] text-[60px] lg:text-[70px] mt-0 tracking-[8px] uppercase text-[#353535] font-[Satisfy]">
+            <div class=" flex flex-col items-center col-span-2 md:col-span-1 lg:col-span-2  lg:pr-20 ">
+                <h1 class="font-[Biryani] text-[16px] lg:text-[70px] mt-0 tracking-[8px] uppercase text-[#353535] font-[Satisfy]">
                     LASHED</h1>
-                <p class="font-[angellaWhite] text-[60px] lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
+                <p class="font-[angellaWhite] text-[20px] lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
                     by Lam lam
                 </p>
-                <div class="text-black md:text-md lg:text-lg px-10 md:px-0 font-[Satisfy] text-[16px] md:text-[18px] lg:text-[30px] ">
-                    <p class="mb-5 text-[16px] md:text-[18px] lg:text-[22px]">
+                <div class="text-black md:text-md lg:text-lg px-2 md:px-0 font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[30px] ">
+                    <p class="mb-2 sm:mb-5 text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">
                         Welcome to the world of lashes, where beauty meets passion!
                     </p>
-                    <p class="mb-5 text-[16px] md:text-[18px] lg:text-[22px]">
+                    <p class="mb-2 sm:mb-5 text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">
                         Hey all lovely babies! My name is Lam. I'm your go-to gal for all things lashes - your friendly
                         neighbourhood lash technician! Allow me to sprinkle a little magic into your life, one lash at a
                         time.
                     </p>
-                    <p class="mb-5 text-[16px] md:text-[18px] lg:text-[22px]">
+                    <p class="mb-2 sm:mb-5 text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">
                         Fresh handmade fans, soft, fluttery lashes that frame your eyes like a work of art, enhancing
                         your
                         natural beauty and boosting your confidence to new heights. That's what I'm all about!
                     </p>
-                    <p class="mb-5 text-[16px] md:text-[18px] lg:text-[22px]">
+                    <p class="mb-2 sm:mb-5 text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">
                         With a palette of luscious lashes and an eye for detail, I'm here to craft the perfect look
                         that's as
                         unique as you are. Whether you're after a subtle enhancement or full-on glam, I've got you
                         covered!
                     </p>
-                    <p class="mb-5 text-[16px] md:text-[18px] lg:text-[22px]">
+                    <p class="mb-2 sm:mb-5 text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">
                         But it's not just about the lashes; it's about the experience. Sit back, relax, and let me
                         pamper you in
                         my cozy studio oasis.
                     </p>
-                    <p class="text-[16px] md:text-[18px] lg:text-[22px]">
+                    <p class="text-[8px] md:text-[18px] lg:text-[22px]">
                         So, if you're ready to elevate your lash game and unleash your inner goddess, let's make some
                         magic
                         happen together!
@@ -120,56 +125,56 @@
         </div>
     </div>
 </div>
-<div class="bg-[#9D937E] py-10 mt-5 mx-14">
+<div class="bg-[#9D937E] py-10 mt-5 mx-2 sm:mx-3 md:mx-4 lg:mx-14 ">
     <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-10">
-            <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:pr-10 md:border-r-[3px] md:border-[#7b7569] w-3/4 h-3/4 md:w-[unset] md:h-[unset]">
+        <div class="grid  grid-cols-3 gap-x-0 sm:gap-x-3  md:gap-x-5 lg:gap-x-10">
+            <div class="col-span-1 py-10 mx-auto md:mx-[unset] md:px-0 md:pr-10 md:border-r-[3px] md:border-[#7b7569] w-ful h-full sm:w-3/4 sm:h-3/4 md:w-[unset] md:h-[unset]">
                 <div class="overflow-hidden ">
-                    <img class="aspect-auto  md:aspect-[4/7]"
+                    <img class="aspect-[5/8]  md:aspect-[4/7]"
                          src="./assets/images/92BB0A72-945A-4BB5-A7FC-294DF75EFAE4.jpeg"
                          alt="spa">
                 </div>
             </div>
 
-            <div class=" flex flex-col items-center lg:col-span-2 pr-5 pt-10 ">
-                <h1 class="font-[Biryani] text-[20px] md:text-[35px] lg:text-[50px] mt-0 uppercase text-[#353535] font-[Satisfy]">
+            <div class=" flex flex-col items-center col-span-2 pr-5 pt-10 ">
+                <h1 class="font-[Biryani] text-[14px] sm:text-[25px]  md:text-[35px] lg:text-[50px] mt-0 uppercase text-[#353535] font-[Satisfy]">
                     BEFOR YOUR APPOINMENT
                 </h1>
-                <p class="font-[angellaWhite] text-[70px] lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
+                <p class="font-[angellaWhite] text-[10px] sm:text-[20px] md:text-[50px]   lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
                     by Lam lam
                 </p>
-                <div class=" mt-14 lg:mt-5 grid grid-cols-2 lg:grid-cols-4  text-black text-center font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]">
-                    <div class="flex flex-col items-center mr-5">
-                        <div class="w-12 h-12 lg:w-16 lg:h-16">
+                <div class=" mt-2 md:mt-5 lg:mt-14 lg:mt-5 grid grid-cols-4  text-black text-center font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]">
+                    <div class="flex flex-col  items-center mr-2">
+                        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13 lg:w-16 lg:h-16">
                             <img class="aspect-around" src="./assets/images/t4.webp" alt="calendar">
                         </div>
-                        <p class=" text-[16px] md:text-[18px] lg:text-[22px] lg:text-lg mt-10">
+                        <p class=" text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px] lg:text-lg mt-2">
                             Every more than 20minute late will be automatically canceled!
                         </p>
                     </div>
-                    <div class="flex flex-col items-center mr-5">
-                        <div class=" w-12 h-12 lg:w-16 lg:h-16">
+                    <div class="flex flex-col  items-center mr-2">
+                        <div class=" w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  lg:w-16 lg:h-16">
                             <img class="aspect-around" src="./assets/images/t3.webp" alt="calendar">
                         </div>
-                        <p class="text-[16px] md:text-[18px] lg:text-[22px] lg:text-lg mt-10">
+                        <p class="text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px] lg:text-lg mt-2">
                             For appointments, have to deposit $35 (non-refundable) to save spot
                         </p>
                     </div>
-                    <div class="flex flex-col mt-8 lg:mt-0 items-center mr-5">
-                        <div class="w-12 h-12 lg:w-16 lg:h-16">
+                    <div class="flex flex-col  lg:mt-0  items-center mr-2">
+                        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  lg:w-16 lg:h-16">
                             <img class="aspect-around" src="./assets/images/t2.webp" alt="calendar">
                         </div>
-                        <p class="text-[16px] md:text-[18px] lg:text-[22px]  lg:text-lg mt-10">
+                        <p class="text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]  lg:text-lg mt-2">
                             1. Cancel in 24H the appointment
                             2. Cancel after reschedule the appointment
                             -> Cancelation fee -$30 gonna be apply on your next appointment
                         </p>
                     </div>
-                    <div class="flex flex-col mt-8 lg:mt-0 items-center mr-5">
-                        <div class="w-12 h-12 lg:w-16 lg:h-16">
+                    <div class="flex flex-col lg:mt-0  items-center mr-2">
+                        <div class="w-6 h-6 sm:w-9 sm:h-9 md:w-13 md:h-13  lg:w-16 lg:h-16">
                             <img class="aspect-around" src="./assets/images/t.webp" alt="calendar">
                         </div>
-                        <p class="text-[16px] md:text-[18px] lg:text-[22px]  lg:text-lg mt-10">
+                        <p class="text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]  lg:text-lg mt-2">
                             No infilling another works
                             Every 4week set or more will be required a removal and full set. You must still have at
                             least 40% retention for infill eyelash extension any less will be charged as full set
@@ -181,24 +186,24 @@
         </div>
     </div>
 </div>
-<section class="w-full">
-    <div class="container mx-auto">
-        <h3 class="text-center  text-[30px] sm:text-[50px] tracking-[8px] uppercase my-10 text-black font-[Satisfy]">
+<section class="w-full ">
+    <div class="container mx-auto px-3">
+        <h3 class="text-center  text-[14px] sm:text-[25px] md:text tracking-[8px] uppercase my-5 lg:my-10 text-black font-[Satisfy]">
             LASHED BY LAM LAM
         </h3>
-        <p class="font-[angellaWhite] text-[70px] text-center lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
+        <p class="font-[angellaWhite] text-[18x] sm:text-[20px] md:text-[50px]  text-center lg:text-[80px] lg:leading-[80px] text-[#353535] lg:translate-y-[-40px]">
             by Lam lam
         </p>
-        <div class="grid  md:grid-cols-1 lg:grid-cols-2 gap-y-20 md:grid-rows-2 mt-10">
-            <div class="flex flex-col items-center sm:items-start sm:flex-row lg:border-0 lg:border-r-[3px]  lg:border-[#9d978b] font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]">
-                <div class="w-[250px] h-[250px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] shadow-[-25px_-25px_0_#9d937e]">
+        <div class="grid  grid-cols-2 gap-y-2 md:gap-y-10 lg:gap-y-20 md:grid-rows-2 mt-2 sm:mt-5 md:mt-8 lg:mt-10">
+            <div class="flex  items-center sm:items-start sm:flex-row lg:border-0 lg:border-r-[3px]  lg:border-[#9d978b] font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]">
+                <div class="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] shadow-[-8px_-8px_0_#9d937e] lg:shadow-[-25px_-25px_0_#9d937e]">
                     <img class="w-full h-full object-cover" src="./assets/images/bn.webp" alt="">
                 </div>
                 <div class="flex-1 flex flex-col items-center mt-5 sm:mt-0">
-                    <h2 class="text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
+                    <h2 class="text-[8px] sm-text-[18px] md:text-[20px] lg:text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
                         Hybrid style
                     </h2>
-                    <p class="text-[16px] md:text-[18px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-5">
+                    <p class="text-[8px] sm:text-[11px] md:text-[14px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-2 sm:mt-5">
                         Hybrid lashes refer to a type of eyelash extension style that combines both classic and volume
                         lash techniques. In this approach, individual extensions are applied to each natural lash,
                         similar to classic lash extensions, but with the addition of lighter, thinner volume lashes
@@ -206,31 +211,31 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col-reverse items-center sm:items-start sm:flex-row font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]  ">
+            <div class="flex  items-center sm:items-start sm:flex-row font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px]  ">
                 <div class="flex-1 flex flex-col items-center mt-2 sm:mt-0">
-                    <h2 class="text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
+                    <h2 class="text-[8px] sm-text-[18px] md:text-[20px] lg:text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
                         Volume style
                     </h2>
-                    <p class="text-[16px] md:text-[18px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-5">
+                    <p class="text-[8px] sm:text-[11px] md:text-[14px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-2 sm:mt-5">
                         Volume lashes are a type of eyelash extension technique where multiple lightweight
                         (0.07)extensions, typically between 2D-6D, are applied to each natural lash, allowing for the
                         creation of a fuller and more voluminous look without adding excessive weight to the natural
                         lashes.
                     </p>
                 </div>
-                <div class="w-[250px] h-[250px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] shadow-[-25px_-25px_0_#9d937e]">
+                <div class="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] shadow-[-8px_-8px_0_#9d937e] lg:shadow-[-25px_-25px_0_#9d937e]">
                     <img class="w-full h-full object-cover" src="./assets/images/top-right.webp" alt="">
                 </div>
             </div>
-            <div class="flex flex-col items-center sm:items-start sm:flex-row lg:border-0 lg:border-r-[3px]  lg:border-[#9d978b] font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px] ">
-                <div class="w-[250px] h-[250px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] shadow-[-25px_-25px_0_#9d937e]">
+            <div class="flex   items-center sm:items-start sm:flex-row lg:border-0 lg:border-r-[3px]  lg:border-[#9d978b] font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px] ">
+                <div class="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] shadow-[-8px_-8px_0_#9d937e] lg:shadow-[-25px_-25px_0_#9d937e]">
                     <img class="w-full h-full object-cover" src="./assets/images/bottom-left.jpeg" alt="">
                 </div>
                 <div class="flex-1 flex flex-col items-center mt-5 sm:mt-0">
-                    <h2 class="text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
+                    <h2 class="text-[8px] sm-text-[18px] md:text-[20px] lg:text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
                         Wispy designed
                     </h2>
-                    <p class="text-[16px] md:text-[18px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-5">
+                    <p class="text-[8px] sm:text-[11px] md:text-[14px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-2 sm:mt-5">
                         Wispy lashes refer to a style of eyelash extensions or false lashes that have a feathery,
                         fluttery appearance, resembling the texture of wisps of hair. These lashes typically feature
                         longer strands at the outer corners, gradually tapering to shorter lengths towards the inner
@@ -239,12 +244,12 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col-reverse items-center sm:items-start sm:flex-row font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px] ">
+            <div class="flex items-center sm:items-start sm:flex-row font-[Satisfy] text-[13px] md:text-[16px] lg:text-[20px] ">
                 <div class="flex-1 flex flex-col items-center mt-5 sm:mt-0">
-                    <h2 class="text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
+                    <h2 class="text-[8px] sm-text-[18px] md:text-[20px] lg:text-[38px] text-black font-[Satisfy]  tracking-[5px] text-[#353535]">
                         Classic style
                     </h2>
-                    <p class="text-[16px] md:text-[18px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-5">
+                    <p class="text-[8px] sm:text-[11px] md:text-[14px] lg:text-[20px] max-w-[80%] mx-auto text-center text-black mt-2 sm:mt-5">
                         Classic lashes, also known as individual lashes, are a type of eyelash extension technique where
                         a single extension (0.15) is applied to each natural lash. These extensions are typically
                         thicker and longer than natural lashes, providing length and volume to enhance the appearance of
@@ -252,18 +257,17 @@
                         to the natural lash, creating a seamless and natural-looking result.
                     </p>
                 </div>
-                <div class="w-[250px] h-[250px] sm:w-[180px] sm:h-[180px] md:w-[220px] md:h-[220px] lg:w-[300px] lg:h-[300px] shadow-[-25px_-25px_0_#9d937e]">
+                <div class="w-[80px] h-[80px] sm:w-[180px] sm:h-[180px] md:w-[150px] md:h-[150px] lg:w-[300px] lg:h-[300px] shadow-[-8px_-8px_0_#9d937e] lg:shadow-[-25px_-25px_0_#9d937e]">
                     <img class="w-full h-full object-cover" src="./assets/images/bottom-right.webp" alt="">
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
-<section class="bg-[#9d937e] mt-10   pt-5 mx-14">
+<section class="bg-[#9d937e] mt-5 lg:mt-10   pt-5 mx-2 lg:mx-14">
     <div class="container mx-auto  min-h-[400px] flex flex-col items-center">
-        <h3 class="text-center  text-[25px] sm:text-[50px]  tracking-[8px] uppercase my-10 text-black font-[Satisfy]">
+        <h3 class="text-center text-[13px]  md:text-[20px] lg:text-[25px] sm:text-[50px]  tracking-[8px] uppercase my-10 text-black font-[Satisfy]">
             SERVICE MENU & APPOINTMENT
         </h3>
         <a class="btn bg-white hover:bg-[#1d232a] text-center font-[Satisfy] cursor-pointer text-[17px] text-[#1d232a] hover:text-[white] px-8 inline-block flex justify-center"
