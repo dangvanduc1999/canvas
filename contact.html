@@ -19,7 +19,7 @@
 <body class="!bg-[#e1e1e1] min-h-[100vh]">
 <div class="navbar bg-[#9d937e] text-black transition ease-in-out !py-3">
     <div class="container mx-auto flex justify-between">
-        <div class="navbar-start">
+        <div class="navbar-start w-full flex">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -29,28 +29,29 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-sm !bg-white dropdown-content mt-3 z-[1] text-black p-2 shadow bg-[#1d232a] rounded-box w-52">
-                    <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a>
-                    </li>
-                    <li><a href="./contact.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a>
-                    </li>
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#1d232a] rounded-box w-52 bg-white text-black">
+                    <li><a href="./home.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Home</a></li>
+                    <li><a href="./contact.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Contact</a></li>
                 </ul>
             </div>
-            <a class="btn btn-ghost text-[20px] md:text-[22px] lg:text-[32px]" href="./home.html">LOGO UI</a>
+            <div class="inline-block w-full text-center lg:text-left">
+                <a class="inline-block translate-y-[2px] w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px] lg:w-[80px] lg:h-[80px]" href="./home.html">
+                    <img class="w-full h-full object-cover" src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a href="./home.html" class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Home</a></li>
-                <li><a href="./contact.html"
-                       class="font-[Satisfy] text-[16px] md:text-[18px] lg:text-[22px]">Contact</a></li>
+                <li><a href="./home.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Home</a></li>
+                <li><a href="./contact.html" class="font-[Satisfy] text-[8px] sm:text-[11px] md:text-[18px] lg:text-[22px]">Contact</a></li>
             </ul>
         </div>
     </div>
 </div>
 <div class="container mx-auto mt-10">
     <div class="grid grid-cols-1">
-        <h3 class="text-center text-sky-800 text-[40px] font-bold  my-10">Tổng đài tư vấn và hỗ trợ trực tuyến </h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 py-10 mb-10 gap-20">
+        <h3 class="text-center text-sky-800 text-[18px] sm:text-[28px] md:text-[50px] font-bold md:3 sm:md-5  md:my-7 lg:my-10">Tổng đài tư vấn và hỗ trợ trực tuyến </h3>
+        <div class="grid grid-cols-2 lg:grid-cols-4 py-10 mb-10 gap-5 sm:gap-10 md:gap-10">
             <div class="flex items-center justify-center     ">
                 <div class="bg-green-600 hover:bg-green-600/[.9] transition py-5 px-9  w-[80%] mx-auto  aspect-square flex flex-col items-center justify-center  shadow rounded-[20px] cursor-pointer">
                     <svg class="w-[45px] h-[45px] text-gray-800 text-white" aria-hidden="true"
@@ -58,7 +59,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
                     </svg>
-                    <span class="text-white font-[Satisfy]">vanduclipi@gmail.com</span>
+                    <span class="text-white font-[Satisfy] text-[10px] sm:text-[20px] md:text-[18px] lg:text-[20px] ">vanduclipi@gmail.com</span>
                 </div>
             </div>
             <div class="flex items-center justify-center ">
@@ -68,7 +69,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
                     </svg>
-                    <span class="text-white">Email</span>
+                    <span class="text-white text-white font-[Satisfy] text-[10px] sm:text-[20px] md:text-[18px] lg:text-[20px]">Email</span>
                 </div>
             </div>
             <div class="flex items-center justify-center ">
@@ -78,7 +79,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
                     </svg>
-                    <span class="text-white">Email</span>
+                    <span class="text-white text-white font-[Satisfy] text-[10px] sm:text-[20px] md:text-[18px] lg:text-[20px]">Email</span>
                 </div>
             </div>
             <div class="flex items-center justify-center ">
@@ -88,7 +89,7 @@
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1"/>
                     </svg>
-                    <span class="text-white">Email</span>
+                    <span class="text-white font-[Satisfy] text-[10px] sm:text-[20px] md:text-[18px] lg:text-[20px] ">Email</span>
                 </div>
             </div>
         </div>
@@ -97,7 +98,7 @@
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6827626376707!2d150.95622837658007!3d-33.87206571922951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bd86bbc27c7d%3A0x7a25b3983bcda6f3!2s10%20Vine%20St%2C%20Fairfield%20NSW%202165%2C%20%C3%9Ac!5e0!3m2!1svi!2sus!4v1705913896535!5m2!1svi!2sus&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;"
         width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade" class="mb-[3rem]"></iframe>
+        referrerpolicy="no-referrer-when-downgrade" class=" mb-[5px] sm:mb-[10px] lg:mb-[1rem]"></iframe>
 <footer>
     <h3 class="uppercase font-[Biryani] text-[#9d937e] treading-[5px] text-center py-2 font-[Satisfy]">
         Lamlamlashes
